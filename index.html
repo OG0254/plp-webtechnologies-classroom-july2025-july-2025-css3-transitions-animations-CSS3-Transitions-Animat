@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">✨ Welcome to My Interactive Page ✨</h1>
+        <button id="themeToggle">Toggle Theme</button>
+    </header>
+
+    <section class="card-grid">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">Hover Me 👋</div>
+            <div class="card-back">Surprise 🎉</div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-front">Click Me 🚀</div>
+            <div class="card-back">Boom 💥</div>
+        </div>
+    </section>
+
+    <section class="modal-section">
+        <button id="modalBtn">Open Modal</button>
+        <div id="modal" class="modal hidden">
+            <p>You opened the modal! 🎊</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </section>
+
+    <!-- NEW SCROLL SECTION -->
+    <section class="features">
+        <h2 class="scroll-animate">🌟 Features on Scroll</h2>
+        <div class="feature scroll-animate">🔥 Smooth animations tied to your scroll</div>
+        <div class="feature scroll-animate">🎨 Clean gradients & flipping cards</div>
+        <div class="feature scroll-animate">🌙 Dark/Light theme toggle</div>
+        <div class="feature scroll-animate">🎉 Confetti-powered modal</div>
+    </section>
+
+    <canvas id="confetti"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
